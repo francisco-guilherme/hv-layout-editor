@@ -1,0 +1,27 @@
+swagger: '2.0' 
+
+info: 
+  version: '1.0.0' 
+  title: HV Layout Editor API 
+  description: API to serve HV Layout Editor.
+  license: 
+    name: Apache-2.0 
+    url: http://opensource.org/licenses/Apache-2.0
+
+basePath: /api/v1
+
+schemes: 
+  - http
+  - https
+
+consumes: 
+  - application/json 
+  
+produces: 
+  - application/json 
+
+paths:
+  $ref: ./paths/index.yaml
+
+definitions:
+  $ref: ./definitions/index.yaml

@@ -1,0 +1,39 @@
+{
+  "name": "hv-layout-editor",
+  "version": "0.0.1",
+  "description": "Visual editor and code generator for React using HV UI Kit",
+  "homepage": "https://github.com/lumada-design/hv-layout-editor",
+  "license": "Apache-2.0",
+  "private": true,
+  "author": {
+    "name": "Hitachi Vantara UI Kit Team"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lumada-design/hv-layout-editor.git"
+  },
+  "scripts": {
+    "start": "lerna run link & lerna run start --parallel",
+    "editor": "lerna run start --scope=@hv/layout-editor --parallel",
+    "api": "lerna run start --scope=@hv/layout-editor-api --parallel",
+    "bootstrap": "npx lerna bootstrap",
+    "build": "npx lerna run build",
+    "clean": "npm-run-all clean:*",
+    "clean:package_clean": "npx lerna run clean --parallel",
+    "clean:lerna": "npx lerna clean --yes ",
+    "lint": "npx lerna run lint --parallel",
+    "publish-": "npx lerna publish --yes",
+    "publish-prerelease": "npx lerna publish prerelease --yes",
+    "publish-prepatch": "npx lerna publish prepatch --yes",
+    "publish-patch": "npx lerna publish patch --yes",
+    "publish-preminor": "npx lerna publish preminor --yes",
+    "publish-minor": "npx lerna publish minor --yes",
+    "publish-premajor": "npx lerna publish premajor --yes",
+    "publish-major": "npx lerna publish major --yes",
+    "test": "npx lerna run test --parallel"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "npm-run-all": "^4.1.5"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "components": {
+    "layout": {
+      "header": {
+        "appName": "Layout Editor"
+      }
+    },
+    "panels": {
+      "left": {
+        "components": {
+          "title": "Components"
+        },
+        "layers": {
+          "title": "Layers"
+        },
+        "pages": {
+          "title": "Pages"
+        }
+      },
+      "canvas": {
+        "title": "Canvas"
+      }
+    }
+  },
+  "pages": {
+    "login": {
+      "loginForm": {
+        "title": "Welcome",
+        "username": {
+          "label": "Username",
+          "placeholder": "Enter text"
+        },
+        "password": {
+          "label": "Password",
+          "placeholder": "Enter text"
+        },
+        "submit": {
+          "logging": "Logging",
+          "login": "Log in"
+        },
+        "error": "Login error!"
+      }
+    },
+    "notFound": {
+      "title": "Not Found"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "rootDir": "../..",
+  "setupFiles": [
+    "<rootDir>/config/tests/test-shim.js",
+    "<rootDir>/config/tests/test-setup.js"
+  ],
+  "moduleFileExtensions": ["js", "jsx", "json"],
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/tests/mocks/fileMock.js",
+    "\\.(css|less)$": "<rootDir>/config/tests/mocks/styleMock.js",
+    "i18next": "<rootDir>/config/tests/mocks/reacti18nextMock.js"
+  },
+  "moduleDirectories": ["node_modules", "src"],
+  "testMatch": ["**/tests/**/*.test.(js|jsx)"],
+  "coverageReporters": ["json", "lcov", "text-summary"],
+  "coverageDirectory": "<rootDir>/coverage",
+  "coverageThreshold": {
+    "global": {
+      "branches": 50,
+      "functions": 50,
+      "lines": 50,
+      "statements": 50
+    }
+  },
+  "snapshotSerializers": ["enzyme-to-json/serializer"]
+}

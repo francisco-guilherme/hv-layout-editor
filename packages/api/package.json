@@ -1,0 +1,41 @@
+{
+  "name": "@hv/layout-editor-api",
+  "version": "0.1.0",
+  "description": "API for HV Layout Editor",
+  "homepage": "https://github.com/lumada-design/hv-layout-editor",
+  "license": "Apache-2.0",
+  "private": true,
+  "author": {
+    "name": "Hitachi Vantara UI Kit Team"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lumada-design/hv-layout-editor.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "link": "npm link @hv/uikit-react-core",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@hv/uikit-react-core": "latest",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.0.1",
+    "js-yaml": "^3.14.0",
+    "json-refs": "^3.0.15",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "react-docgen": "^5.3.0",
+    "shortid": "^2.2.15",
+    "swagger-express-router": "^1.0.0",
+    "swagger-ui-express": "^4.1.4"
+  }
+}
