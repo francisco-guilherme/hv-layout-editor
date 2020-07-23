@@ -10,15 +10,6 @@ Install root dependencies.
 ```bash
 npm i
 ```
-
-#### bootstrap
-
-Bootstrap the packages in the current repo. Installs all their dependencies and links any cross-dependencies.
-
-```bash
-lerna bootstrap
-```
-
 #### start
 
 Start Api and Editor apps.

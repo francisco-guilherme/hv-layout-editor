@@ -1,8 +1,10 @@
-import axios from "axios";
+import { getComponents } from "lib/utils/components";
 
 const fetchComponents = async () => {
-  const components = await axios.get(`http://localhost:3000/api/v1/components`);
-  return components.data;
+  return new Promise(resolve => {
+    const components = getComponents();
+    setTimeout(() => resolve(components));
+  });
 };
 
 const fetchComponent = async () => {
