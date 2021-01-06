@@ -27,7 +27,7 @@
     "@hv/uikit-react-icons": "latest",
     "@material-ui/core": "^4.11.0",
     "@monaco-editor/react": "^3.4.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babylon": "^6.18.0",
     "clsx": "^1.1.1",
     "connected-react-router": "^6.8.0",
